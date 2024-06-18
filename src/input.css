@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    }
+}
+
+@layer utilities {
+    .borderAnimation1 {
+        animation: borders 3s ease-in-out infinite;
+    }
+
+    .borderAnimation2 {
+        animation: borders 3.3s ease-in-out infinite;
+    }
+
+    .borderAnimation3 {
+        animation: borders 3.6s ease-in-out infinite;
+    }
+
+    .borderAnimation4 {
+        animation: borders 4s ease-in-out infinite;
+    }
+
+    .borderAnimation5 {
+        animation: borders 4.3s ease-in-out infinite;
+    }
+
+    .borderAnimation6 {
+        animation: borders 4.6s ease-in-out infinite;
+    }
+
+    .borderAnimation7 {
+        animation: borders 5s ease-in-out infinite;
+    }
+
+    .borderAnimation8 {
+        animation: borders 5.3s ease-in-out infinite;
+    }
+
+    .borderAnimation9 {
+        animation: borders 5.6s ease-in-out infinite;
+    }
+
+    .borderAnimation10 {
+        animation: borders 6s ease-in-out infinite;
+    }
+
+    .borderAnimation11 {
+        animation: borders 6.3s ease-in-out infinite;
+    }
+
+    .borderAnimation12 {
+        animation: borders 6.6s ease-in-out infinite;
+    }
+
+    .borderAnimation13 {
+        animation: borders 7s ease-in-out infinite;
+    }
+
+    .borderAnimation14 {
+        animation: borders 7.5s ease-in-out infinite;
+    }
+
+
+
+    .borderAnimationx1 {
+        animation: bordersLeftRight 3s ease-in-out infinite;
+    }
+
+    .borderAnimationx2 {
+        animation: bordersLeftRight 3.3s ease-in-out infinite;
+    }
+
+    .borderAnimationx3 {
+        animation: bordersLeftRight 3.6s ease-in-out infinite;
+    }
+
+    .borderAnimationx4 {
+        animation: bordersLeftRight 4s ease-in-out infinite;
+    }
+
+    .borderAnimationx5 {
+        animation: bordersLeftRight 4.3s ease-in-out infinite;
+    }
+
+    .borderAnimationx6 {
+        animation: bordersLeftRight 4.6s ease-in-out infinite;
+    }
+
+    .borderAnimationx7 {
+        animation: bordersLeftRight 5s ease-in-out infinite;
+    }
+
+    .borderAnimationx8 {
+        animation: bordersLeftRight 5.3s ease-in-out infinite;
+    }
+
+    .borderAnimationx9 {
+        animation: bordersLeftRight 5.6s ease-in-out infinite;
+    }
+
+    .borderAnimationx10 {
+        animation: bordersLeftRight 6s ease-in-out infinite;
+    }
+
+    .borderAnimationx11 {
+        animation: bordersLeftRight 6.3s ease-in-out infinite;
+    }
+
+    .borderAnimationx12 {
+        animation: bordersLeftRight 6.6s ease-in-out infinite;
+    }
+
+    .borderAnimationx13 {
+        animation: bordersLeftRight 7s ease-in-out infinite;
+    }
+
+    .borderAnimationx14 {
+        animation: bordersLeftRight 7.5s ease-in-out infinite;
+    }
+
+    @keyframes borders {
+        0% {
+            @apply border-b-4 border-neutral-950;
+
+        }
+
+        50% {
+            @apply border-b-4 border-green-400/[0.3];
+        }
+
+        100% {
+            @apply border-b-4 border-neutral-950;
+
+        }
+
+    }
+
+    @keyframes bordersLeftRight {
+        0% {
+            @apply border-b-4 border-neutral-950;
+
+        }
+
+        50% {
+            @apply border-x-4 border-green-400/[0.3];
+        }
+
+        100% {
+            @apply border-b-4 border-neutral-950;
+
+        }
+    }
+
+
+
+    .welcome {
+        animation: animationWelcome 5s ease-in infinite;
+    }
+
+    .login {
+        animation: animationLogin 10s ease-in infinite;
+    }
+
+
+    @keyframes animationWelcome {
+        0% {
+            @apply opacity-0
+        }
+
+        50% {
+            @apply opacity-100
+        }
+
+        100% {
+            @apply opacity-0
+        }
+    }
+
+    @keyframes animationLogin {
+        0% {
+            @apply opacity-0
+        }
+
+        50% {
+            @apply opacity-100
+        }
+
+        100% {
+            @apply opacity-0
+        }
+    }
+
+    .invalids:invalid {
+        @apply border-l-4 border-l-red-400/80;
+    }
+
+    .validing:valid {
+        @apply border-l-4 border-green-400/95;
+    }
+
+    .erroranimation {
+        animation: erroranimation 20s 10s step-start;
+    }
+
+
+    @keyframes erroranimation {
+        from {
+            @apply opacity-100;
+        }
+
+        to {
+            @apply opacity-100;
+        }
+
+    }
+}
